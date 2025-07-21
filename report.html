@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report an Issue - DG Store</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff8f5;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffb085; /* Peach tone */
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 176, 133, 0.4);
+}
+
+.report-container {
+    background: white;
+    max-width: 600px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.report-container h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #ff7e31;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ffd2b8;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff7e31;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 126, 49, 0.4);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"],
+button[type="button"],
+button {
+    background-color: #ff7e31;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover,
+button:hover {
+    background-color: #e56a21;
+}
+
+button + button {
+    margin-left: 15px;
+    background-color: #ddd;
+    color: #555;
+}
+
+button + button:hover {
+    background-color: #bbb;
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: #ffb085;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 -3px 8px rgba(255, 176, 133, 0.4);
+}
+
+
+@media (max-width: 480px) {
+    .report-container {
+        padding: 20px;
+    }
+
+    button[type="submit"],
+    button + button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    button + button {
+        margin-left: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Report an Issue</h1>
+    </header>
+
+    <div class="report-container">
+        <h2>Help Us Fix the Problem</h2>
+        <form>
+            <label for="order-id">Order ID (optional)</label>
+            <input type="text" id="order-id" placeholder="Enter order ID if applicable">
+
+            <label for="issue-type">Issue Type</label>
+            <select id="issue-type" required>
+                <option value="">Select an issue</option>
+                <option value="delivery">Delivery Problem</option>
+                <option value="product">Product Issue</option>
+                <option value="payment">Payment Problem</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="details">Details</label>
+            <textarea id="details" rows="6" placeholder="Describe the issue in detail..." required></textarea>
+
+            <button type="submit">Submit Report</button>
+            <button onclick="window.location.href='index.php'">Back Home</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Maison D&G Store. All rights reserved.
+    </footer>
+</body>
+</html>

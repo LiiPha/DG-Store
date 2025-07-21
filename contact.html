@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Maison D&G Store</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            background-color: #ff6f43;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            color: white;
+        }
+    header {
+            text-align: center;
+        }
+    .contact-container {
+        max-width: 600px;
+        margin: 60px auto;
+        background-color: #fff8f5;
+        padding: 35px 25px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(255, 160, 122, 0.2);
+        border: 1px solid #ffd6c4;
+    }
+
+    .contact-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 2rem;
+        color: #e86f51;
+        font-weight: bold;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        margin-top: 16px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #444;
+    }
+
+    form input,
+    form textarea {
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        resize: vertical;
+    }
+
+    form input:focus,
+    form textarea:focus {
+        border-color: #ff9472;
+        box-shadow: 0 0 0 3px rgba(255, 148, 114, 0.2);
+        outline: none;
+    }
+
+
+    form button {
+        margin-top: 25px;
+        padding: 14px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #ff9472;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    form button:hover {
+        background-color: #ff6f43;
+        transform: translateY(-2px);
+    }
+
+
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+        background-color: #111;
+        color: white;
+        margin-top: 60px;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Maison D&G Store</h1>
+    </header>
+
+    <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+            <button onclick="window.location.href = 'index.php' " >Back Home</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Maison D&G Store. All rights reserved.
+    </footer>
+</body>
+</html>
